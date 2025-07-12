@@ -3,7 +3,7 @@ import { Banner } from './banner/banner';
 
 @Component({
   selector: 'app-root',
-  imports: [Banner],
+  imports: [ Banner ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

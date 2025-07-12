@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { DatePipe } from '@angular/common';
+import { DatePipe, TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-boas-vindas',
   imports: [
-    DatePipe
+    DatePipe,
+    TitleCasePipe
   ],
   templateUrl: './boas-vindas.html',
   styleUrl: './boas-vindas.css'
