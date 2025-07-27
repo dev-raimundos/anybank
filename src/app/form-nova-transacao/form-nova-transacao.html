@@ -1,5 +1,6 @@
 <main class="form-wrapper">
-  <form (ngSubmit)="aoSubmeter()" class="form">
+  <!-- o ngNativeValidate faz com que o angular considere as validações do HTML ao invés de apenas FormsModule -->
+  <form (ngSubmit)="aoSubmeter()" class="form" ngNativeValidate>
 
     <h2 class="titulo">Nova Transação</h2>
 

@@ -3,16 +3,19 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-form-nova-transacao',
-  imports: [FormsModule],
+  imports: [ FormsModule ], //! Ao importar remove todas as validações de formulário nativa do HTML.
   templateUrl: './form-nova-transacao.html',
   styleUrl: './form-nova-transacao.css'
 })
 
 export class FormNovaTransacao {
-  valorTransacao: number = 30;
-  tipoTransacao: string = "saque"
+  valorTransacao: string = "";
+  tipoTransacao: string = "";
 
   aoSubmeter() {
     console.log(this.valorTransacao);
+    console.log(this.tipoTransacao);
+    this.tipoTransacao = "";
+    this.valorTransacao = "";
   }
 }
